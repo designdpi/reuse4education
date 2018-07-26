@@ -1,0 +1,548 @@
+<!-- some icons came from:
+https://www.iconfinder.com/iconsets/google-material-design-icons
+https://www.iconfinder.com/icons/48672/donate_icon
+
+free under CC but need attribution somewhere
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>reuse4education</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+    
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" />
+    <script src="assets/js/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#ffffff",
+          "text": "#777777"
+        },
+        "button": {
+          "background": "#1C4734",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "href": "#",
+    	"dismiss": "GOT IT!",
+        "link": "Learn More"
+      }
+    })});
+    </script>
+    <!-- END Cookie Consent -->    
+	
+    <!-- SLIDER ASSETS -->
+    <link href="assets/css/carousel.min.css" rel="stylesheet">
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+	<!-- END SLIDER ASSETS -->
+
+</head>
+<body>
+<div id="wrapper">
+
+        <div class="header">
+        	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+        		 role="navigation">
+        		<div class="container">
+
+                <div class="navbar-identity">
+
+
+        			<a href="index.html" class="navbar-brand logo logo-title">
+                    <img src="images/logo.png">
+        			</a>
+
+
+        			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
+        					type="button">
+
+        				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+
+
+        			</button>
+
+
+                </div>
+
+
+
+        			<div class="navbar-collapse collapse">
+        				<ul class="nav navbar-nav navbar-left">
+
+        				</ul>
+        				<ul class="nav navbar-nav ml-auto navbar-right">
+        					<li class="nav-item"><a href="about-us.html" class="nav-link"> About Us</a>
+        					</li>
+        					<li class="nav-item"><a href="how-it-works.html" class="nav-link"> How it Works</a>
+        					</li>
+        					<li class="nav-item"><a href="wanted.html" class="nav-link"> Wanted</a>
+        					</li>
+        					<li class="nav-item"><a href="browse.html" class="nav-link"> Browse</a>
+        					</li> 
+        					<li class="nav-item"><a href="contact-us.html" class="nav-link"> Contact Us</a>
+        					</li>                                                                                                               
+        					<li class="postadd nav-item"><a class="btn btn-block btn-border btn-post btn-danger nav-link" href="registration.html">Registration</a>
+        					</li>
+        					<li class="dropdown  lang-menu nav-item">
+        						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+        							<span class="lang-title">EN</span>
+
+        						</button>
+        						<ul class="dropdown-menu dropdown-menu-right user-menu" role="menu">
+        							<li class="dropdown-item"><a class="active">
+
+        								<span class="lang-name">English</span></a>
+        							</li>
+        							<li class="dropdown-item"><a><span class="lang-name">French</span></a>
+        							</li>
+        							<li class="dropdown-item"><a><span class="lang-name">Spanish</span></a>
+        							</li>
+        							<li class="dropdown-item"><a><span class="lang-name">German</span></a>
+        							</li>
+        						</ul>
+        					</li>
+        				</ul>
+        			</div>
+        			<!--/.nav-collapse -->
+        		</div>
+        		<!-- /.container-fluid -->
+        	</nav>
+        </div>
+        <!-- /.header -->
+
+<!-- SLIDER STARTS -->
+<!-- useful https://bootstrapious.com/p/bootstrap-carousel -->
+<div>
+    <div id="myCarousel" class="carousel slide carousel-fade">    
+    <!--<ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active" contenteditable="false"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="" contenteditable="false"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="" contenteditable="false"></li>
+        <li data-target="#myCarousel" data-slide-to="3" class="" contenteditable="false"></li>
+        <li data-target="#myCarousel" data-slide-to="4" class="" contenteditable="false"></li>
+    </ol> -->     
+    <div class="carousel-inner carousel slide" data-ride="carousel" data-interval="5000">  
+        <div class="item active" style="">
+            <img src="images/slider/paint-1280557_1920.jpg" alt="" class="">
+            <a href="registration.html"><div class="carousel-caption">
+                <h1 class="intro-title animated fadeInDown">
+                        REUSE4EDUCATION
+                    </h1>
+                <p class="">
+                   Education budgets are tight, but you still need resources.<br>
+                   Don’t spend, swap...  click here
+                </p>
+                
+                    <div class="row search-row">
+                        
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>
+                
+            </div></a>
+        </div>
+        
+        <div class="item">
+            <img src="images/slider/tablet-1910018_1920.jpg" alt="" class="">
+            <a href="registration.html"><div class="carousel-caption">
+                <h1 class="intro-title animated fadeInDown">
+                        REUSE4EDUCATION
+                    </h1>
+                <p class="">
+                   You want your equipment to last as long as possible so you always deliver the best in education.<br>
+                   Join our community... click here
+                </p>
+                
+                    <div class="row search-row">
+                        
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>            
+                
+            </div></a>
+        </div>
+        
+        <div class="item" style="">
+            <img src="images/slider/white-board-593370_1920.jpg" alt="" class="">
+            <a href="registration.html"><div class="carousel-caption">
+                <h1 class="intro-title animated fadeInDown">
+                        REUSE4EDUCATION
+                    </h1>
+                <p class="">
+                   You have old kit that you’re about to throw out. Stop.<br>
+                   Donate it instead...  click here
+                </p>
+                
+                    <div class="row search-row">
+                        
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>               
+                
+            </div></a>
+        </div>
+        
+        <div class="item" style="">
+            <img src="images/slider/pencil-1486278_1920.jpg" alt="" class="">
+            <a href="registration.html"><div class="carousel-caption">
+                <h1 class="intro-title animated fadeInDown">
+                        REUSE4EDUCATION
+                    </h1>
+                <p class="">
+                   Urgently need to borrow something for an event or school function?<br>
+                   We’ve got you covered...  click here
+                </p>
+                
+                    <div class="row search-row">
+                        
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>               
+                
+            </div></a>
+        </div>
+        
+        <div class="item" style="">
+            <img src="images/slider/stereoscope-748902_1920.jpg" alt="" class="">
+            <a href="registration.html"><div class="carousel-caption">
+                <h1 class="intro-title animated fadeInDown">
+                        REUSE4EDUCATION
+                    </h1>
+                <p class="">
+                   Equipment to share?<br>
+                   Loan it to another school through our platform...  click here
+                </p>
+                
+                    <div class="row search-row">
+                        
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>              
+                
+            </div></a>
+        </div>
+                                       
+    </div>    
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>        
+</div>
+<!-- SLIDER ENDS -->
+
+    <div class="main-container inner-page">
+        <div class="container">
+            <div class="row clearfix">
+
+                <div class="col-xl-12 content-box">
+                  <div class="white-box text-left" style="min-height: 400px">
+                        <br>
+                        <h3>Welcome to reuse4education</h3>
+                        <p>At Reuse4education.com we are building an international educational community designed to provide schools, colleges and universities with access to an incredible variety of resources, equipment and opportunities.  The site is currently <a href="registration.html">free to use</a>, so please try.</p>
+                        
+            <div class="col-xl-12 content-box">
+                <div class="row row-featured row-featured-category row-featured-company justify-content-center">
+                    <div class="col-xl-12  box-title">
+                        <div class="inner"><h2><span>With us you can...</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="#"><img alt="img" class="img-responsive" src="images/01.png">
+                            <h6> DONATE <span class="jobs-count text-muted">(16)</span></h6>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="#"><img alt="img" class="img-responsive" src="images/02.png">
+                        	<h6> SELL <span class="jobs-count text-muted">(12)</span></h6>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="#"><img alt="img" class="img-responsive" src="images/03.png">
+                            <h6> SWAP <span class="jobs-count text-muted">(23)</span></h6>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="#"><img alt="img" class="img-responsive" src="images/04.png">
+                        	<h6> BORROW <span class="jobs-count text-muted">(33)</span></h6>
+                        </a>
+                    </div>
+
+                    <!--<div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="#"><img alt="img" class="img-responsive" src="images/05.png">
+                            <h6> LOAN <span class="jobs-count text-muted">(49)</span></h6>
+                        </a>
+                    </div>-->
+
+
+                </div>
+
+
+            <div style="clear: both"></div> 
+            
+            <br>
+            
+            <p>Join <a href="registration.html">right here</a> and become part of a community of educators and institutions that want to deliver the best possible educational facilities on ever tightening budgets. With us you can, swap, donate, sell or borrow vital resources.</p>
+            
+            <br>
+        </div>
+                                
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- /.main-container -->
+    
+    <div class="page-bottom-info">
+        <div class="page-bottom-info-inner">
+
+            <div class="page-bottom-info-content text-center">
+                <h1>Have a question or need some help, please call the reuse4education support team on 0845 456 2338</h1>
+                <a class="btn  btn-lg btn-primary-dark" href="tel:+08454562338">
+                    <i class="icon-mobile"></i> <span class="hide-xs color50">Call Now:</span> 0845 456 2338 </a>
+            </div>
+
+        </div>
+    </div>      
+    
+    <footer class="main-footer">
+    	<div class="footer-content">
+    		<div class="container">
+    			<div class="row">
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">About Us</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="about-us.html">About Us</a></li>
+    							<li><a href="how-it-works.html">How it Works</a></li>
+    							<li><a href="registration.html">Registration</a></li>
+    							<li><a href="pricing.html">Pricing</a></li>
+    							<li><a href="contact-us.html">Contact Us</a></li>
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">With Us You Can</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Donate<a></li>
+    							<li><a href="#">Sell</a></li>
+    							<li><a href="#">Swap</a></li>
+    							<li><a href="#">Borrow</a></li>
+    							<li><a href="#">Loan</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Useful Links</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">FAQ</a></li>
+    							<li><a href="#">Blog</a></li>
+    							<li><a href="#">Popular Categories</a></li>
+    							<li><a href="#">Popular Items</a></li>
+    							<li><a href="#">Site Map</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Account</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Login</a></li>
+    							<li><a href="#">Register</a></li>
+    							<li><a href="#">My Account</a></li>
+    							<li><a href="#">My Items</a></li>
+    							<li><a href="#">Profile</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-4 col-xl-4 col-md-4 col-12">
+    					<div class="footer-col row">
+
+    						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
+    							<div class="mobile-app-content">
+    								<h4 class="footer-title no-margin">Social</h4>
+    								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
+    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i> </a></li>
+    									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i> </a></li>
+    									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i> </a></li>
+    									<li><a class="icon-color gp" title="YouTube" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-youtube"></i> </a></li>
+    									<li><a class="icon-color pin" title="Pinterest" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+    								</ul>
+    							</div>
+
+    						</div>
+    					</div>
+    				</div>
+    				<div style="clear: both"></div>
+
+    				<div class="col-xl-12">
+    					<div class=" text-center paymanet-method-logo">
+
+    						<!--<img src="images/site/payment/master_card.png" alt="img">
+    						<img alt="img" src="images/site/payment/visa_card.png">
+    						<img alt="img" src="images/site/payment/american_express_card.png"> 
+    						<img alt="img" src="images/site/payment/paypal.png">-->
+
+    					</div>
+
+    					<div class="copy-info text-center">
+    						&copy; 2018 reuse4education. built by <a class="designdpi" data-title="Website and mobile app development in London" href="https://www.jasonlipowicz.com" target="_blank">jason lipowicz</a>, design by <a class="designdpi" data-title="Web design Doncaster, Pontefract &amp; South Yorkshire" href="https://www.designdpi.com" target="_blank"> design dpi</a>
+    					</div>
+
+    				</div>
+
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    <!-- /.footer -->
+</div>
+<!-- /.wrapper -->
+
+
+<!-- The javascript
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+<script>
+    $('#myCarousel').carousel();
+    var winWidth = $(window).innerWidth();
+    $(window).resize(function () {
+
+        if ($(window).innerWidth() < winWidth) {
+            $('.carousel-inner>.item>img').css({
+                'min-width': winWidth, 'width': winWidth
+            });
+        }
+        else {
+            winWidth = $(window).innerWidth();
+            $('.carousel-inner>.item>img').css({
+                'min-width': '', 'width': ''
+            });
+        }
+    });
+  
+</script>
+</body>
+</html>
