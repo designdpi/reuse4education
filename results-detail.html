@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>Results Detail - reuse4education</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" />
+    <script src="assets/js/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#ffffff",
+          "text": "#777777"
+        },
+        "button": {
+          "background": "#1C4734",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "href": "#",
+    	"dismiss": "GOT IT!",
+        "link": "Learn More"
+      }
+    })});
+    </script>
+    <!-- END Cookie Consent -->
+
+</head>
+<body>
+<div id="wrapper">
+
+        <div class="header">
+        	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+        		 role="navigation">
+        		<div class="container">
+
+                <div class="navbar-identity">
+
+
+        			<a href="index.html" class="navbar-brand logo logo-title">
+                    <img src="images/logo.png">
+        			</a>
+
+
+        			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
+        					type="button">
+
+        				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+
+
+        			</button>
+
+                </div>
+
+
+
+        			<div class="navbar-collapse collapse">
+        				<ul class="nav navbar-nav navbar-left">
+        				</ul>
+        				<ul class="nav navbar-nav ml-auto navbar-right">
+        					<li class="nav-item"><a href="about-us.html" class="nav-link"> About Us</a>
+        					</li>
+        					<li class="nav-item"><a href="how-it-works.html" class="nav-link"> How it Works</a>
+        					</li>
+        					<li class="nav-item"><a href="wanted.html" class="nav-link"> Wanted</a>
+        					</li>
+        					<li class="nav-item"><a href="browse.html" class="nav-link"> Browse</a>
+        					</li> 
+        					<li class="nav-item"><a href="contact-us.html" class="nav-link"> Contact Us</a>
+        					</li>                                                                                                               
+        					<li class="postadd nav-item"><a class="btn btn-block btn-border btn-post btn-danger nav-link" href="login.html">Log in</a>
+        					</li>
+        					<li class="lang-menu nav-item">
+                                <a href="registration.html" class="btn btn-secondary">
+                               Register
+                                </a>
+        					</li>
+        				</ul>
+        			</div>
+        			<!--/.nav-collapse -->
+        		</div>
+        		<!-- /.container-fluid -->
+        	</nav>
+        </div>
+        <!-- /.header -->
+
+    <div class="intro" style="background-image: url(images/bg3.jpg);">
+        <div class="dtable hw100">
+            <div class="dtable-cell hw100">
+                <div class="container text-center">
+                    <h1 class="intro-title animated fadeInDown">&nbsp; </h1>
+
+                    <p class="sub animateme fittext3 animated fadeIn">
+                        Search reuse4educations database for the items you need </p>
+
+                    <div class="row search-row animated fadeInUp">
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.intro -->
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <nav aria-label="breadcrumb" role="navigation" class="pull-left">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="icon-home fa"></i></a></li>
+                            <li class="breadcrumb-item"><a href="results-list.html">All Items</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Category</li>
+                        </ol>
+                    </nav>
+
+
+                    <div class="pull-right backtolist"><a href="sub-category-sub-location.html"> <i
+                            class="fa fa-angle-double-left"></i> Back to Results</a></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 page-content col-thin-right">
+                    <div class="inner inner-box ads-details-wrapper">
+                        <h2> Item Title Goes Here... 
+                            <small class="label label-default adlistingtype">School Item</small>
+                        </h2>
+                        <span class="info-row"> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - <span
+                                class="category">Category </span>- <span class="item-location"><i
+                                class="fa fa-map-marker"></i> London </span> </span>
+
+                        <div class="ads-image">
+                            <h1 class="pricetag"> £125</h1>
+                            <ul class="bxslider">
+                                <li><img src="images/results-items/big-image.jpg" alt="img"/></li>
+                                <!--<li><img src="images/results-items/big-image.jpg" alt="img"/></li>
+                                <li><img src="images/results-items/big-image.jpg" alt="img"/></li>-->
+                            </ul>
+
+                            <br>
+
+                            <div id="bx-pager">
+                                <a class="thumb-item-link" data-slide-index="0" href="#"><img src="images/results-items/thumb.jpg" alt="img"/></a>
+                                <a class="thumb-item-link" data-slide-index="1" href="#"><img src="images/results-items/thumb.jpg" alt="img"/></a>
+                                <a class="thumb-item-link" data-slide-index="2" href="#"><img src="images/results-items/thumb.jpg" alt="img"/></a>
+                            </div>
+                        </div>
+                        <!--ads-image-->
+
+                        <div class="Ads-Details">
+                            <h5 class="list-title"><strong>Item Details</strong></h5>
+
+                            <div class="row">
+                                <div class="ads-details-info col-md-8">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, leo vel rhoncus lacinia, ipsum eros lacinia nulla, id efficitur nisi odio varius nisi. </p>
+                                    <h4>Bullet Points</h4>
+                                    <ul class="list-circle">
+                                        <li>Quisque posuere porta augue</li>
+                                        <li>Id commodo augue pretium gravida</li>
+                                        <li>Vestibulum rutrum est id nisi pulvinar</li>
+                                        <li>In dictum eros convallis</li>
+                                        <li>Pellentesque eleifend at risus at bibendum</li>
+                                        <li>Interdum et malesuada fames ac ante ipsum primis in faucibus</li>
+                                        <li>In maximus non leo vel euismod</li>
+                                        <li>Mauris vel dictum elit</li>
+                                        <li>Aliquam efficitur sit amet tortor eu mollis</li>
+                                        <li>Duis mauris dui</li>
+                                        <li>Tincidunt a sem vitae</li>
+                                        <li>Egestas imperdiet magna</li>
+                                        <li>Mauris sagittis ante vitae tellus luctus luctus</li>
+                                        <li>Mauris magna sem</li>
+                                        <li>Convallis sit amet nisl quis, posuere semper arcu</li>
+                                        <li>Maecenas maximus hendrerit nibh</li>
+                                        <li>At feugiat tortor laoreet vel.</li>
+                                    </ul>
+                                    <h4>More Information</h4>
+                                    <ul>
+                                        <li>Quisque feugiat est a vestibulum faucibus</li>
+                                        <li>Mauris ut nunc velit</li>
+                                        <li>Vestibulum congue ac diam at blandit</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <aside class="panel panel-body panel-details">
+                                        <ul>
+                                            <li>
+                                                <p class=" no-margin "><strong>Price:</strong> £125</p>
+                                            </li>
+                                            <li>
+                                                <p class="no-margin"><strong>Category:</strong> Category</p>
+                                            </li>
+                                            <li>
+                                                <p class="no-margin"><strong>Location:</strong> London </p>
+                                            </li>
+                                            <li>
+                                                <p class=" no-margin "><strong>Condition:</strong> New</p>
+                                            </li>
+                                            <li>
+                                                <p class="no-margin"><strong>Other:</strong> Add other???</p>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                    <div class="ads-action">
+                                        <ul class="list-border">
+                                            <li><a href="#"> <i class=" fa fa-user"></i> More Items from this User </a></li>
+                                            <li><a href="#"> <i class=" fa fa-heart"></i> Save Item </a></li>
+                                            <li><a href="#"> <i class="fa fa-share-alt"></i> Share Item </a></li>
+                                            <li><a href="#reportAdvertiser" data-toggle="modal"> <i
+                                                    class="fa icon-info-circled-alt"></i> Report Item? </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-footer text-left"><a class="btn  btn-default" data-toggle="modal"
+                                                                     href="#contactAdvertiser"><i
+                                    class=" icon-mail-2"></i> Send a message </a> <a class="btn  btn-info"><i
+                                    class=" icon-mobile"></i> 0845 456 2338 </a></div>
+                        </div>
+                    </div>
+                    <!--/.ads-details-wrapper-->
+
+                </div>
+                <!--/.page-content-->
+
+                <div class="col-md-3  page-sidebar-right">
+                    <aside>
+                        <div class="card sidebar-card  bg-contact-seller">
+                            <div class="card-header">Contact Authority</div>
+                            <div class="card-content user-info">
+                                <div class="card-body text-center">
+                                    <div class="seller-info">
+                                        <h3 class="no-margin">Username</h3>
+                                        <p>Location: <strong>London</strong>
+                                        </p>
+                                        <p>Joined: <strong>16 February 2014</strong>
+                                        </p>
+                                    </div>
+                                    <div class="user-ads-action"><a href="#contactAdvertiser" data-toggle="modal"
+                                                                    class="btn   btn-secondary btn-block"><i
+                                            class=" icon-mail-2"></i> Send a message </a>
+                                        <a
+                                                class="btn  btn-info btn-block"><i class=" icon-mobile"></i> 0845 456 2338</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card sidebar-panel">
+                            <div class="card-header">Tips for Users (<em>just examples</em>)</div>
+                            <div class="card-content">
+                                <div class="card-body text-left">
+                                    <ul class="list-check">
+                                        <li>Meet advertiser in a public place</li>
+                                        <li>Check the item before you buy / borrow</li>
+                                        <li>Pay only after collecting the item</li>
+                                    </ul>
+                                    <p><a class="float-right" href="#"> FAQ's <i class="fa fa-angle-double-right"></i> </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.categories-list-->
+                    </aside>
+                </div>
+                <!--/.page-side-bar-->
+            </div>
+        </div>
+    </div>
+    <!-- /.main-container -->
+    
+    <div class="page-bottom-info">
+        <div class="page-bottom-info-inner">
+
+            <div class="page-bottom-info-content text-center">
+                <h1>Have a question or need some help, please call the reuse4education support team on 0845 456 2338</h1>
+                <a class="btn  btn-lg btn-primary-dark" href="tel:+08454562338">
+                    <i class="icon-mobile"></i> <span class="hide-xs color50">Call Now:</span> 0845 456 2338 </a>
+            </div>
+
+        </div>
+    </div>      
+    
+    <footer class="main-footer">
+    	<div class="footer-content">
+    		<div class="container">
+    			<div class="row">
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">About Us</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="about-us.html">About Us</a></li>
+    							<li><a href="how-it-works.html">How it Works</a></li>
+    							<li><a href="registration.html">Registration</a></li>
+    							<li><a href="pricing.html">Pricing</a></li>
+    							<li><a href="contact-us.html">Contact Us</a></li>
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">With Us You Can</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Donate<a></li>
+    							<li><a href="#">Sell</a></li>
+    							<li><a href="#">Swap</a></li>
+    							<li><a href="#">Borrow</a></li>
+    							<li><a href="#">Loan</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Useful Links</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">FAQ</a></li>
+    							<li><a href="#">Blog</a></li>
+    							<li><a href="#">Popular Categories</a></li>
+    							<li><a href="#">Popular Items</a></li>
+    							<li><a href="#">Site Map</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Account</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Login</a></li>
+    							<li><a href="#">Register</a></li>
+    							<li><a href="#">My Account</a></li>
+    							<li><a href="#">My Items</a></li>
+    							<li><a href="#">Profile</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-4 col-xl-4 col-md-4 col-12">
+    					<div class="footer-col row">
+
+    						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
+    							<div class="mobile-app-content">
+    								<h4 class="footer-title no-margin">Social</h4>
+    								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
+    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i> </a></li>
+    									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i> </a></li>
+    									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i> </a></li>
+    									<li><a class="icon-color gp" title="YouTube" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-youtube"></i> </a></li>
+    									<li><a class="icon-color pin" title="Pinterest" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+    								</ul>
+    							</div>
+
+    						</div>
+    					</div>
+    				</div>
+    				<div style="clear: both"></div>
+
+    				<div class="col-xl-12">
+    					<div class=" text-center paymanet-method-logo">
+
+    						<!--<img src="images/site/payment/master_card.png" alt="img">
+    						<img alt="img" src="images/site/payment/visa_card.png">
+    						<img alt="img" src="images/site/payment/american_express_card.png"> 
+    						<img alt="img" src="images/site/payment/paypal.png">-->
+
+    					</div>
+
+    					<div class="copy-info text-center">
+    						&copy; 2018 reuse4education. built by <a class="designdpi" data-title="Website and mobile app development in London" href="https://www.jasonlipowicz.com" target="_blank">jason lipowicz</a>, design by <a class="designdpi" data-title="Web design Doncaster, Pontefract &amp; South Yorkshire" href="https://www.designdpi.com" target="_blank"> design dpi</a>
+    					</div>
+
+    				</div>
+
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    <!-- /.footer -->
+</div>
+<!-- /.wrapper -->
+
+
+<!-- The javascript
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>

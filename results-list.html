@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>Results List - reuse4education</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" />
+    <script src="assets/js/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#ffffff",
+          "text": "#777777"
+        },
+        "button": {
+          "background": "#1C4734",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "href": "#",
+    	"dismiss": "GOT IT!",
+        "link": "Learn More"
+      }
+    })});
+    </script>
+    <!-- END Cookie Consent -->
+
+</head>
+<body>
+<div id="wrapper">
+
+        <div class="header">
+        	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+        		 role="navigation">
+        		<div class="container">
+
+                <div class="navbar-identity">
+
+
+        			<a href="index.html" class="navbar-brand logo logo-title">
+                    <img src="images/logo.png">
+        			</a>
+
+
+        			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
+        					type="button">
+
+        				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+
+
+        			</button>
+
+                </div>
+
+
+
+        			<div class="navbar-collapse collapse">
+        				<ul class="nav navbar-nav navbar-left">
+        				</ul>
+        				<ul class="nav navbar-nav ml-auto navbar-right">
+        					<li class="nav-item"><a href="about-us.html" class="nav-link"> About Us</a>
+        					</li>
+        					<li class="nav-item"><a href="how-it-works.html" class="nav-link"> How it Works</a>
+        					</li>
+        					<li class="nav-item"><a href="wanted.html" class="nav-link"> Wanted</a>
+        					</li>
+        					<li class="nav-item"><a href="browse.html" class="nav-link"> Browse</a>
+        					</li> 
+        					<li class="nav-item"><a href="contact-us.html" class="nav-link"> Contact Us</a>
+        					</li>                                                                                                               
+        					<li class="postadd nav-item"><a class="btn btn-block btn-border btn-post btn-danger nav-link" href="login.html">Log in</a>
+        					</li>
+        					<li class="lang-menu nav-item">
+                                <a href="registration.html" class="btn btn-secondary">
+                               Register
+                                </a>
+        					</li>
+        				</ul>
+        			</div>
+        			<!--/.nav-collapse -->
+        		</div>
+        		<!-- /.container-fluid -->
+        	</nav>
+        </div>
+        <!-- /.header -->
+
+    <div class="intro" style="background-image: url(images/bg3.jpg);">
+        <div class="dtable hw100">
+            <div class="dtable-cell hw100">
+                <div class="container text-center">
+                    <h1 class="intro-title animated fadeInDown">&nbsp; </h1>
+
+                    <p class="sub animateme fittext3 animated fadeIn">
+                        Search reuse4educations database for the items you need </p>
+
+                    <div class="row search-row animated fadeInUp">
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.intro -->
+
+    <div class="main-container inner-page">
+        <div class="container">
+            <div class="row">
+                <!-- this (.mobile-filter-sidebar) part will be position fixed in mobile version -->
+                <div class="col-md-3 page-sidebar mobile-filter-sidebar">
+                    <aside>
+                        <div class="inner-box">
+                            <div class="categories-list  list-filter">
+                                <h5 class="list-title"><strong><a href="#">All Categories</a></strong></h5>
+                                <ul class=" list-unstyled">
+                                    <li><a href="results-detail.html"><span class="title">Classroom Furniture</span><span class="count">&nbsp;123</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Science </span><span class="count">&nbsp;45</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">PE / Gym </span><span class="count">&nbsp;67</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Admin furniture </span><span class="count">&nbsp;89</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Stationary </span><span class="count">&nbsp;10</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">IT </span><span class="count">&nbsp;11</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Audio Visual </span><span class="count">&nbsp;12</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Text Books</span><span class="count">&nbsp;13</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Eletrical</span><span class="count">&nbsp;14</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Mechanical</span><span class="count">&nbsp;15</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Machinery</span><span class="count">&nbsp;15</span></a></li>
+                                    <li><a href="results-detail.html"><span class="title">Stage / Theatre</span><span class="count">&nbsp;15</span></a></li>
+                                </ul>
+                            </div>
+                            <!--/.categories-list-->
+
+                            <div class="locations-list  list-filter">
+                                <h5 class="list-title"><strong><a href="#">Location</a></strong></h5>
+                                <ul class="browse-list list-unstyled long-list">
+                                    <li><a href="#"> London </a></li>
+                                    <li><a href="#"> Birmingham </a></li>
+                                    <li><a href="#"> Manchester </a></li>
+                                    <li><a href="#"> Glasgow </a></li>
+                                    <li><a href="#"> Leeds </a></li>
+                                    <li><a href="#"> Liverpool </a></li>
+                                    <li><a href="#"> Newcastle </a></li>
+                                    <li><a href="#"> Sheffield </a></li>
+                                    <li><a href="#"> Belfast </a></li>
+                                    <li><a href="#"> Bristol </a></li>
+                                    <li><a href="#"> Nottingham </a></li>
+                                    <li><a href="#"> Southahampton </a></li>
+                                    <li><a href="#"> Leicester </a></li>
+                                </ul>
+                            </div>
+                            <!--/.locations-list-->
+
+                            <div class="locations-list  list-filter">
+                                <h5 class="list-title"><strong><a href="#">Price range</a></strong></h5>
+
+                                <form role="form" class="form-inline ">
+                                    <div class="form-group col-lg-4 col-md-12 no-padding">
+                                        <input type="text" placeholder="£ 10 " id="minPrice" class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-1 col-md-12 no-padding text-center hidden-md"> -</div>
+                                    <div class="form-group col-lg-4 col-md-12 no-padding">
+                                        <input type="text" placeholder="£ 1000 " id="maxPrice" class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-md-12 no-padding">
+                                        <button class="btn btn-default pull-right btn-block-md" type="submit">GO
+                                        </button>
+                                    </div>
+                                </form>
+                                <div style="clear:both"></div>
+                            </div>
+                            <!--/.list-filter-->
+                            <div class="locations-list  list-filter">
+                                <h5 class="list-title"><strong><a href="#">Items</a></strong></h5>
+                                <ul class="browse-list list-unstyled long-list">
+                                    <li><a href="#"><strong>All Items</strong> <span class="count">123,456</span></a></li>
+                                    <li><a href="#">University <span class="count">78,910</span></a></li>
+                                    <li><a href="#">School <span class="count">11,121</span></a></li>
+                                </ul>
+                            </div>
+                            <!--/.list-filter-->
+                            <div class="locations-list  list-filter">
+                                <h5 class="list-title"><strong><a href="#">Condition</a></strong></h5>
+                                <ul class="browse-list list-unstyled long-list">
+                                    <li><a href="#">New <span class="count">123,456</span></a></li>
+                                    <li><a href="#">Used <span class="count">78,910</span></a></li>
+                                    <li><a href="#">None </a></li>
+                                </ul>
+                            </div>
+                            <!--/.list-filter-->
+                            <div style="clear:both"></div>
+                        </div>
+
+                        <!--/.categories-list-->
+                    </aside>
+                </div>
+                <!--/.page-side-bar-->
+                <div class="col-md-9 page-content col-thin-left">
+                    <div class="category-list">
+                        <div class="tab-box ">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs add-tabs" id="ajaxTabs" role="tablist">
+                                <li class="active nav-item">
+                                    <a  class="nav-link" href="ajax/1.html" data-url="ajax/1.html" role="tab"
+                                    data-toggle="tab">All Items <span class="badge badge-secondary">123,456</span></a>
+                                </li>
+                                <li class="nav-item">
+                                	<a class="nav-link"  href="ajax/2.html" data-url="ajax/2.html" role="tab" 
+                                    data-toggle="tab">University <span class="badge badge-secondary">78,910</span></a>
+                                </li>
+                                <li class="nav-item">
+                                	<a class="nav-link"  href="ajax/3.html" data-url="ajax/3.html" role="tab" 
+                                    data-toggle="tab">School <span class="badge badge-secondary">11,121</span></a>
+                                </li>
+                            </ul>
+
+
+                            <div class="tab-filter">
+                                <select class="selectpicker select-sort-by" data-style="btn-select" data-width="auto">
+                                    <option>Sort by </option>
+                                    <option>Price: Low to High</option>
+                                    <option>Price: High to Low</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--/.tab-box-->
+
+                        <div class="listing-filter">
+                            <div class="pull-left col-xs-6">
+                                <div class="breadcrumb-list"><a href="#" class="current"> <span>All ads</span></a>
+                                    in
+
+                                    <!-- cityName will replace with selected location/area from location modal -->
+                                    <span class="cityName"> London </span> <a href="#selectRegion" id="dropdownMenu1"
+                                    data-toggle="modal"> <span class="caret"></span> </a></div>
+                            </div>
+                            <div class="pull-right col-xs-6 text-right listing-view-action"><span
+                                    class="list-view active"><i class="  icon-th"></i></span> <span
+                                    class="compact-view"><i class=" icon-th-list  "></i></span> <span
+                                    class="grid-view "><i class=" icon-th-large "></i></span></div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <!--/.listing-filter-->
+
+
+                        <!-- Mobile Filter bar-->
+                        <div class="mobile-filter-bar col-xl-12  ">
+                            <ul class="list-unstyled list-inline no-margin no-padding">
+                                <li class="filter-toggle">
+                                    <a class="">
+                                        <i class="  icon-th-list"></i>
+                                        Filters
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <div class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle"> Short
+
+                                        by </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-item"><a href="#" rel="nofollow">Relevance</a>
+                                            </li>
+                                            <li class="dropdown-item"><a href="#" rel="nofollow">Date</a>
+                                            </li>
+                                            <li class="dropdown-item"><a href="#" rel="nofollow">Company</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-overly-mask"></div>
+                        <!-- Mobile Filter bar End-->
+
+                        <div class="adds-wrapper">
+                            <div class="tab-content">
+                                <!--<div class="tab-pane active" id="allAds"><div class="item-list make-list" style="">-->
+                                <div class="tab-pane active" id=""><div class="item-list make-list" style="">
+                                    <div class="cornerRibbons topAds">
+                                        <a href="#"> SELL</a>
+                                    </div>
+                                    <div class="row">
+
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a>
+                                        </div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html">
+                                                Item title goes here </a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="University">U </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - <span class="category">Category </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £320 </h2>
+                                        <a class="btn btn-danger  btn-sm make-favorite"> <i class="fa fa-certificate"></i> <span>Featured Item</span> </a> <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                        </div>
+                                </div>
+                                <!--/.item-list-->
+
+                                <div class="item-list make-list" style="">
+                                    <div class="cornerRibbons featuredAds">
+                                        <a href="#"> SWAP</a>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a>
+                                        </div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html">
+                                                Item title goes here </a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="College">C </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - <span class="category">Category </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £250 </h2>
+                                        <a class="btn btn-danger  btn-sm make-favorite"> <i class="fa fa-certificate"></i> <span>Featured Item</span>
+                                        </a> <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                </div>
+                                </div>
+
+                                <!--/.item-list-->
+                                <div class="item-list make-list" style=""><div class="row">
+                                    <div class="cornerRibbons urgentAds">
+                                        <a href="#"> DONATE</a>
+                                    </div>
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a>
+                                        </div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html"> 
+                                            Item title goes here  </a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="School">S </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - <span class="category">Category </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £230</h2>
+                                        <a class="btn btn-danger  btn-sm make-favorite"> <i class="fa fa-certificate"></i> <span>Featured Item</span> </a> <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                </div>
+                                </div>
+                                <!--/.item-list-->
+                                <div class="item-list make-list" style=""><div class="row">
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a>
+                                        </div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html"> 
+                                            Item title goes here, it can be as long or as short as needed... </a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="Business Ads">U </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - <span class="category">Category </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->                                
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £400 </h2>
+                                        <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                </div>
+                                </div>                                
+                                <!--/.item-list-->
+                                <div class="item-list make-list" style=""><div class="row">
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a>
+                                        </div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html"> Item title goes here, it can be as long or as short as needed... </a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="Business Ads">U </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - Category<span class="category"> </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £150 </h2>
+                                        <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                </div>
+                                </div>
+                                <!--/.item-list-->
+                                <div class="item-list make-list" style=""><div class="row">
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a></div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html"> Item title goes here, it can be as long or as short as needed... </a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="Business Ads">C </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - Category<span class="category"> </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £150 </h2>
+                                        <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                </div>
+                                </div>
+                                <!--/.item-list-->
+
+
+                                <div class="item-list make-list" style=""><div class="row">
+                                    <div class="col-md-2 no-padding photobox">
+                                        <div class="add-image"><span class="photo-count"><i class="fa fa-camera"></i> 2 </span> <a href="ads-details.html"><img class="thumbnail no-margin" src="images/results-items/thumb.jpg" alt="img"></a></div>
+                                    </div>
+                                    <!--/.photobox-->
+                                    <div class="col-sm-7 add-desc-box col-md-7">
+                                        <div class="ads-details">
+                                            <h5 class="add-title"><a href="ads-details.html"> Item title goes here, it can be as long or as short as needed...</a></h5>
+                                            <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="Business Ads">S </span> <span class="date"><i class=" icon-clock"> </i> Today 1:23 pm </span> - <span class="category">Category </span>- <span class="item-location"><i class="fa fa-map-marker"></i> London </span> </span></div>
+                                    </div>
+                                    <!--/.add-desc-box-->
+                                    <div class="col-md-3 text-right  price-box">
+                                        <h2 class="item-price"> £150 </h2>
+                                        <a class="btn btn-default  btn-sm make-favorite"> <i class="fa fa-heart"></i> <span>Save</span> </a></div>
+                                    <!--/.add-desc-box-->
+                                    </div>
+                                </div>
+                                <!--/.item-list--></div>
+                            </div>
+                        </div>
+
+                        <div class="tab-box  save-search-bar text-center"><a href="#"> <i class=" icon-star-empty"></i>
+                            Save Search </a></div>
+                    </div>
+                    <div class="pagination-bar text-center">
+                    	<nav aria-label="Page navigation " class="d-inline-b">
+                    		<ul class="pagination">
+
+                    			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    			<li class="page-item"><a class="page-link" href="#">2</a></li>
+                    			<li class="page-item"><a class="page-link" href="#">3</a></li>
+                    			<li class="page-item"><a class="page-link" href="#">4</a></li>
+                    			<li class="page-item"><a class="page-link" href="#">...</a></li>
+                    			<li class="page-item">
+                    				<a class="page-link" href="#">Next</a>
+                    			</li>
+                    		</ul>
+                    	</nav>
+                    </div>
+                    <!--/.pagination-bar -->
+
+                    <div class="post-promo text-center">
+                        <h2> Do you have items to sell / lend? </h2>
+                        <h5>List  your items with reuse4eduction FOR FREE. It's easier than you think!</h5>
+                        <a href="#" class="btn btn-lg btn-border btn-post btn-danger">ADD ITEM + </a>
+                    </div>
+                    <!--/.post-promo-->
+
+                </div>
+                <!--/.page-content-->
+
+            </div>
+        </div>
+    </div>
+    <!-- /.main-container -->
+    
+    <div class="page-bottom-info">
+        <div class="page-bottom-info-inner">
+
+            <div class="page-bottom-info-content text-center">
+                <h1>Have a question or need some help, please call the reuse4education support team on 0845 456 2338</h1>
+                <a class="btn  btn-lg btn-primary-dark" href="tel:+08454562338">
+                    <i class="icon-mobile"></i> <span class="hide-xs color50">Call Now:</span> 0845 456 2338 </a>
+            </div>
+
+        </div>
+    </div>      
+    
+    <footer class="main-footer">
+    	<div class="footer-content">
+    		<div class="container">
+    			<div class="row">
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">About Us</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="about-us.html">About Us</a></li>
+    							<li><a href="how-it-works.html">How it Works</a></li>
+    							<li><a href="registration.html">Registration</a></li>
+    							<li><a href="pricing.html">Pricing</a></li>
+    							<li><a href="contact-us.html">Contact Us</a></li>
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">With Us You Can</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Donate<a></li>
+    							<li><a href="#">Sell</a></li>
+    							<li><a href="#">Swap</a></li>
+    							<li><a href="#">Borrow</a></li>
+    							<li><a href="#">Loan</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Useful Links</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">FAQ</a></li>
+    							<li><a href="#">Blog</a></li>
+    							<li><a href="#">Popular Categories</a></li>
+    							<li><a href="#">Popular Items</a></li>
+    							<li><a href="#">Site Map</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Account</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Login</a></li>
+    							<li><a href="#">Register</a></li>
+    							<li><a href="#">My Account</a></li>
+    							<li><a href="#">My Items</a></li>
+    							<li><a href="#">Profile</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-4 col-xl-4 col-md-4 col-12">
+    					<div class="footer-col row">
+
+    						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
+    							<div class="mobile-app-content">
+    								<h4 class="footer-title no-margin">Social</h4>
+    								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
+    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i> </a></li>
+    									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i> </a></li>
+    									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i> </a></li>
+    									<li><a class="icon-color gp" title="YouTube" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-youtube"></i> </a></li>
+    									<li><a class="icon-color pin" title="Pinterest" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+    								</ul>
+    							</div>
+
+    						</div>
+    					</div>
+    				</div>
+    				<div style="clear: both"></div>
+
+    				<div class="col-xl-12">
+    					<div class=" text-center paymanet-method-logo">
+
+    						<!--<img src="images/site/payment/master_card.png" alt="img">
+    						<img alt="img" src="images/site/payment/visa_card.png">
+    						<img alt="img" src="images/site/payment/american_express_card.png"> 
+    						<img alt="img" src="images/site/payment/paypal.png">-->
+
+    					</div>
+
+    					<div class="copy-info text-center">
+    						&copy; 2018 reuse4education. built by <a class="designdpi" data-title="Website and mobile app development in London" href="https://www.jasonlipowicz.com" target="_blank">jason lipowicz</a>, design by <a class="designdpi" data-title="Web design Doncaster, Pontefract &amp; South Yorkshire" href="https://www.designdpi.com" target="_blank"> design dpi</a>
+    					</div>
+
+    				</div>
+
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    <!-- /.footer -->
+</div>
+<!-- /.wrapper -->
+
+
+<!-- The javascript
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
