@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>Create / Edit - reuse4education</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" />
+    <script src="assets/js/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#ffffff",
+          "text": "#777777"
+        },
+        "button": {
+          "background": "#1C4734",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "href": "#",
+    	"dismiss": "GOT IT!",
+        "link": "Learn More"
+      }
+    })});
+    </script>
+    <!-- END Cookie Consent -->
+
+</head>
+<body>
+<div id="wrapper">
+
+        <div class="header">
+        	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+        		 role="navigation">
+        		<div class="container">
+
+                <div class="navbar-identity">
+
+
+        			<a href="index.html" class="navbar-brand logo logo-title">
+                    <img src="images/logo.png">
+        			</a>
+
+
+        			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
+        					type="button">
+
+        				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+
+
+        			</button>
+
+                </div>
+
+
+
+        			<div class="navbar-collapse collapse">
+        				<ul class="nav navbar-nav navbar-left">
+        				</ul>
+        				<ul class="nav navbar-nav ml-auto navbar-right">
+        					<li class="nav-item"><a href="about-us.html" class="nav-link"> About Us</a>
+        					</li>
+        					<li class="nav-item"><a href="how-it-works.html" class="nav-link"> How it Works</a>
+        					</li>
+        					<li class="nav-item"><a href="wanted.html" class="nav-link"> Wanted</a>
+        					</li>
+        					<li class="nav-item"><a href="browse.html" class="nav-link"> Browse</a>
+        					</li> 
+        					<li class="nav-item"><a href="contact-us.html" class="nav-link"> Contact Us</a>
+        					</li>                                                                                                               
+        					<li class="postadd nav-item"><a class="btn btn-block btn-border btn-post btn-danger nav-link" href="login.html">Log in</a>
+        					</li>
+        					<li class="lang-menu nav-item">
+                                <a href="registration.html" class="btn btn-secondary">
+                               Register
+                                </a>
+        					</li>
+        				</ul>
+        			</div>
+        			<!--/.nav-collapse -->
+        		</div>
+        		<!-- /.container-fluid -->
+        	</nav>
+        </div>
+        <!-- /.header -->
+
+    <div class="intro" style="background-image: url(images/bg3.jpg);">
+        <div class="dtable hw100">
+            <div class="dtable-cell hw100">
+                <div class="container text-center">
+                    <h1 class="intro-title animated fadeInDown">&nbsp; </h1>
+
+                    <p class="sub animateme fittext3 animated fadeIn">
+                        Search reuse4educations database for the items you need </p>
+
+                    <div class="row search-row animated fadeInUp">
+                        <div class="col-xl-4 col-sm-4 search-col relative"><i class="icon-docs icon-append"></i>
+                            <input type="text" name="ads" class="form-control has-icon"
+                                   placeholder="I'm looking for..." value="">
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="Post Code..." value="">
+
+                        </div>
+                        <div class="col-xl-4 col-sm-4 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find</strong></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.intro -->
+
+    <div class="main-container inner-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 page-content">
+                    <div class="inner-box category-content">
+                        <h2 class="title-2 uppercase"><strong> <i class="icon-briefcase"></i> Post an Item </strong></h2>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="form-horizontal">
+                                    <fieldset>
+
+                                        <!-- Text input-->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="ItemName">Item Name</label>
+
+                                          <div class="col-md-8">
+                                                <input id="jobTitle" name="ItemName" placeholder="Item Name"
+                                                       class="form-control input-md" required="" type="text">
+                                              <span class="form-text text-muted">A great item name needs at least 60 characters, and must contain some keywords to help users find your item.</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Select Basic -->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">School Type</label>
+
+                                            <div class="col-md-8">
+                                                <select title="school" name="school-group" id="school-group" class="form-control">
+                                                    <option value="0" selected="selected"> Please Select...</option>
+                                                    <option value="111">Nursery Schoool</option>
+                                                    <option value="112">Primary School</option>
+                                                    <option value="113">Secondary School</option>
+                                                    <option value="114">College</option>
+                                                    <option value="115">University</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea -->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="textarea">Item Description
+
+                                            </label>
+
+                                            <div class="col-sm-8">
+
+                                                <textarea style="height: 250px" class="form-control" id="textarea"
+                                                          name="textarea">Item Description</textarea>
+
+                                                <span class="form-text text-muted">Please describe the item with as much detail as possible. </span>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Select Basic -->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="Location">Location </label>
+
+                                            <div class="col-sm-8">
+                                                <input id="Location" name="Location" placeholder="City or Postcode"
+                                                       class="form-control input-md" required="" type="text">
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Multiple Radios (inline) -->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Category</label>
+
+                                            <div class="col-sm-8">
+
+                                                <select class="form-control" name="type" id="type">
+                                                    <option selected="" value="0" name="Please Select...">Please Select...</option>
+                                                    <option value="ClassroomFurniture" name="ClassroomFurniture">Classroom Furniture</option>
+                                                    <option value="Science" name="Science">Science</option>
+                                                    <option value="PEGym" name="PEGym">PE / Gym</option>
+                                                    <option value="AdminFurniture" name="AdminFurniture">Admin Furniture</option>
+                                                    <option value="Stationary" name="Stationary">Stationary</option>
+                                                    <option value="IT" name="IT">IT</option>
+                                                    <option value="AudioVisual" name="AudioVisual">Audio Visual</option>
+                                                    <option value="TextBooks" name="TextBooks">Text Books</option>
+                                                    <option value="Electrical" name="Electrical">Electrical</option>
+                                                    <option value="Mechanical" name="Mechanical">Mechanical</option>
+                                                    <option value="Machinery" name="Machinery">Machinery</option>
+                                                    <option value="Stagetheatre" name="Stagetheatre">Stage / theatre</option>
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Prepended text-->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="Salary ">Price </label>
+
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">£</span>
+                                                    <input id="Price" name="Price" class="form-control"
+                                                           placeholder="0.00 " required="" type="text">
+
+                                                    <div class="input-group-btn">
+
+
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                            Type
+                                                        </button>
+                                                        <ul class="dropdown-menu ">
+                                                            <li><a class="dropdown-item">Donate</a></li>
+                                                            <li><a class="dropdown-item">Sell</a></li>
+                                                            <li><a class="dropdown-item">Swap</a></li>
+                                                            <li><a class="dropdown-item">Borrow</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="content-subheading"><i class="icon-user fa"></i> <strong>School Information</strong></div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="textinput-name">School Name</label>
+
+                                            <div class="col-sm-8">
+                                                <input id="textinput-name" name="textinput-name"
+                                                       placeholder="School Name" class="form-control input-md"
+                                                       required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="textinput-name">Your Name</label>
+
+                                            <div class="col-sm-8">
+                                                <input id="textinput-name" name="textinput-name"
+                                                       placeholder="Your Name" class="form-control input-md"
+                                                       required="" type="text">
+                                            </div>
+                                        </div>
+
+                                        <!-- Appended checkbox -->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="your-email"> Your Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input id="your-email" name="your-email" class="form-control"
+                                                       placeholder="Your Email" required="" type="text">
+
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox"> <small>Hide the email on this listing</small>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="Phone-Number">Phone Number</label>
+
+                                            <div class="col-sm-8">
+                                                <input id="Phone-Number" name="Phone-Number"
+                                                       placeholder="Phone Number" class="form-control input-md"
+                                                       required="" type="text">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card bg-light card-body mb-3">
+                                            <h3><i class=" icon-certificate icon-color-1"></i> Make your listing Premium
+                                            </h3>
+
+                                            <p>Premium listings help sellers promote their items by giving
+                                                their listings more visibility with more
+                                                buyers and sell what they want faster. <a href="#">Learn
+                                                    more</a></p>
+
+                                            <div class="form-group row">
+                                                <table class="table table-hover checkboxtable">
+                                                    <tr>
+                                                        <td>
+
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="optionsRadios0" value="option1" checked>
+                                                                    Regular Listing
+                                                                </label>
+                                                            </div>
+
+                                                        </td>
+                                                        <td><p>£0.00</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="optionsRadios1" value="option1" >
+                                                                    <strong> Premium Listing</strong>
+                                                                </label>
+                                                            </div>
+
+                                                        </td>
+                                                        <td><p>£10.00</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="optionsRadios2" value="option2" >
+                                                                    <strong> Premium Top of the Page Listing</strong>
+                                                                </label>
+                                                            </div>
+
+
+                                                        </td>
+                                                        <td><p>£20.00</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-8">
+                                                                    <select class="form-control" name="Method"
+                                                                            id="PaymentMethod">
+                                                                        <option value="2">Select Payment Method</option>
+                                                                        <option value="3">Credit / Debit Card</option>
+                                                                        <option value="5">Paypal</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td><p><strong>Payable Amount : £20.00</strong></p></td>
+                                                    </tr>
+                                                </table>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- terms -->
+                                        <div class="form-group row">
+                                            <!--<label class="col-sm-3 col-form-label p-0">Terms</label>-->
+
+                                            <div class="col-sm-8">
+
+                                                <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description"> Remember above contact information</span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Button  -->
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"></label>
+
+                                            <div class="col-sm-8"><a href="posting-success.html" id="button1id"
+                                                                      class="btn btn-success btn-lg">Submit</a></div>
+                                        </div>
+</fieldset>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.page-content -->
+
+                <div class="col-md-3 reg-sidebar">
+                    <div class="reg-sidebar-inner text-center">
+                        <div class="promo-text-box"><i class=" icon-lamp fa fa-4x icon-color-1"></i>
+
+                            <h3><strong>Effective Listings </strong></h3>
+
+                            <p>A good listing will inlcude a detailed item name and description. </p>
+                        </div>
+
+                        <div class="card sidebar-card">
+                            <div class="card-header uppercase">
+                                <small><strong> Item Listing Tips</strong></small>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body text-left">
+                                    <ul class="list-check">
+                                        <li> Add Relevant Keywords</li>
+                                        <li> Use Familiar Item Names</li>
+                                        <li> Include Detailed Description</li>
+                                        <li> Add Your Location</li>
+                                        <li> Add To A Category</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--/.reg-sidebar-->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <!-- /.main-container -->
+    
+    <div class="page-bottom-info">
+        <div class="page-bottom-info-inner">
+
+            <div class="page-bottom-info-content text-center">
+                <h1>Have a question or need some help, please call the reuse4education support team on 0845 456 2338</h1>
+                <a class="btn  btn-lg btn-primary-dark" href="tel:+08454562338">
+                    <i class="icon-mobile"></i> <span class="hide-xs color50">Call Now:</span> 0845 456 2338 </a>
+            </div>
+
+        </div>
+    </div>      
+    
+    <footer class="main-footer">
+    	<div class="footer-content">
+    		<div class="container">
+    			<div class="row">
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">About Us</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="about-us.html">About Us</a></li>
+    							<li><a href="how-it-works.html">How it Works</a></li>
+    							<li><a href="registration.html">Registration</a></li>
+    							<li><a href="pricing.html">Pricing</a></li>
+    							<li><a href="contact-us.html">Contact Us</a></li>
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">With Us You Can</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Donate<a></li>
+    							<li><a href="#">Sell</a></li>
+    							<li><a href="#">Swap</a></li>
+    							<li><a href="#">Borrow</a></li>
+    							<li><a href="#">Loan</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Useful Links</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">FAQ</a></li>
+    							<li><a href="#">Blog</a></li>
+    							<li><a href="#">Popular Categories</a></li>
+    							<li><a href="#">Popular Items</a></li>
+    							<li><a href="#">Site Map</a></li>
+
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-2 col-xl-2 col-md-2 col-6  ">
+    					<div class="footer-col">
+    						<h4 class="footer-title">Account</h4>
+    						<ul class="list-unstyled footer-nav">
+    							<li><a href="#">Login</a></li>
+    							<li><a href="#">Register</a></li>
+    							<li><a href="#">My Account</a></li>
+    							<li><a href="#">My Items</a></li>
+    							<li><a href="#">Profile</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    				<div class=" col-xl-4 col-xl-4 col-md-4 col-12">
+    					<div class="footer-col row">
+
+    						<div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
+    							<div class="mobile-app-content">
+    								<h4 class="footer-title no-margin">Social</h4>
+    								<ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
+    									<li><a class="icon-color fb" title="Facebook" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i> </a></li>
+    									<li><a class="icon-color tw" title="Twitter" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i> </a></li>
+    									<li><a class="icon-color lin" title="Linkedin" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i> </a></li>
+    									<li><a class="icon-color gp" title="YouTube" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-youtube"></i> </a></li>
+    									<li><a class="icon-color pin" title="Pinterest" data-placement="top" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+    								</ul>
+    							</div>
+
+    						</div>
+    					</div>
+    				</div>
+    				<div style="clear: both"></div>
+
+    				<div class="col-xl-12">
+    					<div class=" text-center paymanet-method-logo">
+
+    						<!--<img src="images/site/payment/master_card.png" alt="img">
+    						<img alt="img" src="images/site/payment/visa_card.png">
+    						<img alt="img" src="images/site/payment/american_express_card.png"> 
+    						<img alt="img" src="images/site/payment/paypal.png">-->
+
+    					</div>
+
+    					<div class="copy-info text-center">
+    						&copy; 2018 reuse4education. built by <a class="designdpi" data-title="Website and mobile app development in London" href="https://www.jasonlipowicz.com" target="_blank">jason lipowicz</a>, design by <a class="designdpi" data-title="Web design Doncaster, Pontefract &amp; South Yorkshire" href="https://www.designdpi.com" target="_blank"> design dpi</a>
+    					</div>
+
+    				</div>
+
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    <!-- /.footer -->
+</div>
+<!-- /.wrapper -->
+
+
+<!-- The javascript
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
