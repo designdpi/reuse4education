@@ -5735,6 +5735,9 @@ table.checkboxtable td, table.checkboxtable th {
 
 .text-white {
   color: #fff !important; }
+  
+.text-white:hover {
+  color: #107360 !important; }  
 
 .text-hide {
   font: 0/0 a;
